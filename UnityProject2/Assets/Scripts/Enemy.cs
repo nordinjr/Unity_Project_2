@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            
+            GameManager.Instance.GameOver();
         }
     }
 }

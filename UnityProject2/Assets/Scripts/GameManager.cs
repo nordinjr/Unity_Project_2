@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
     public void StartDialog(string text)
     {
         dialogBox.SetActive(true);
+        dialogText.GetComponent<TextMeshProUGUI>().text = text;
     }
 
     public void HideDialog()

@@ -13,6 +13,8 @@ public class movement : MonoBehaviour
 
     public float runSpeed = 5f;
 
+    private bool sliding;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +30,17 @@ public class movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(horizontal != 0 && vertical != 0){
-            horizontal *= moveLimiter;
-            vertical *= moveLimiter;
+        if(!sliding){
+            if(horizontal != 0 && vertical != 0){
+                horizontal *= moveLimiter;
+                vertical *= moveLimiter;
+            }
+            body.velocity = new Vector2(horizontal*runSpeed, vertical*runSpeed);
         }
-        body.velocity = new Vector2(horizontal*runSpeed, vertical*runSpeed);
+        
+    }
+
+    public void slide(bool sliding){
+        this.sliding = sliding;
     }
 }

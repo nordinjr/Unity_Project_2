@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class water : MonoBehaviour
+public class ice : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,18 +17,18 @@ public class water : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision){
-        Debug.Log("soft icey boi");
+        Debug.Log("icey boi");
         if(collision.gameObject.CompareTag("Player")){
             movement x = collision.gameObject.GetComponent<movement>();
-            x.runSpeed = 2.5f;
+            x.slide(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision){
-        Debug.Log("leave soft icey boi");
+        Debug.Log("leave icey boi");
         if(collision.gameObject.CompareTag("Player")){
             movement x = collision.gameObject.GetComponent<movement>();
-            x.runSpeed = 5f;
+            x.slide(false);
         }
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
     Rigidbody2D body;
+    
+
 
     private float vertical;
     private float horizontal;
@@ -26,6 +28,7 @@ public class movement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+        
     }
 
     private void FixedUpdate()
@@ -43,4 +46,5 @@ public class movement : MonoBehaviour
     public void slide(bool sliding){
         this.sliding = sliding;
     }
+  
 }

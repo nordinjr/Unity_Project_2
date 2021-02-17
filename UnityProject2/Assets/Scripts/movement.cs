@@ -5,8 +5,6 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
     Rigidbody2D body;
-    
-
 
     private float vertical;
     private float horizontal;
@@ -20,22 +18,27 @@ public class movement : MonoBehaviour
 
     private bool sliding;
 
-    public AudioClip walk;
+    public AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
     {
+        audio = GetComponent<AudioSource>();
+        //audio.loop = true
         body = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-    
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
-
-        AudioSource.PlayClipAtPoint (walk, transform.position);
+        if ( Input.GetButtonDown( "Horizontal" ) || Input.GetButtonDown( "Vertical" ) ){
+            audio.Play();
+        }   
+        else if ( !Input.GetButton( "Horizontal" ) && !Input.GetButton( "Vertical" ) && GetComponent<AudioSource>().isPlaying ){
+            audio.Stop();
+        }  
         
     }
 

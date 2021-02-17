@@ -18,9 +18,9 @@ public class cameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        leftBound = boundaryPercent * Camera.main.pixelWidth;
+        leftBound = boundaryPercent * Camera.main.pixelWidth + 100;
         rightBound = Camera.main.pixelWidth - leftBound;
-        downBound = boundaryPercent * Camera.main.pixelHeight;
+        downBound = boundaryPercent * Camera.main.pixelHeight + 100;
         upBound = Camera.main.pixelHeight - downBound;
     }
 

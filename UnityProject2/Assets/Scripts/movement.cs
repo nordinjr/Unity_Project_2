@@ -20,6 +20,8 @@ public class movement : MonoBehaviour
 
     private bool sliding;
 
+    public AudioClip walk;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +31,11 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+    
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
+        AudioSource.PlayClipAtPoint (walk, transform.position);
         
     }
 
@@ -44,6 +48,8 @@ public class movement : MonoBehaviour
             }
             body.velocity = new Vector2(horizontal*runSpeed, vertical*runSpeed);
         }
+
+        
 
         if (horizontal > 0 && !lookingright)
         {

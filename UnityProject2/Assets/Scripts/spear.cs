@@ -8,6 +8,8 @@ public class spear : MonoBehaviour
     public float speed = 15f;
     public Rigidbody2D rb;
     public int damage = 40;
+
+    public AudioClip getHit;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,8 @@ public class spear : MonoBehaviour
 
         if (enemy != null)
         {
+            AudioSource.PlayClipAtPoint (getHit, transform.position);
+
             enemy.TakeDamage(damage);
         }
         Destroy(gameObject);

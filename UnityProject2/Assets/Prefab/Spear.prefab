@@ -256,3 +256,4 @@ MonoBehaviour:
   speed: 10
   rb: {fileID: -5635984351942390741}
   damage: 40
+  getHit: {fileID: 8300000, guid: a78c0a977d87e8245bfe8449d891529b, type: 3}

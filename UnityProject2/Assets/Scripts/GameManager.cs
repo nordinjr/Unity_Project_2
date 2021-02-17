@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject dialogText;
     public GameObject startButton;
     public GameObject backgroundImage;
+    public float typeSpeed = .05f;
     
 
     public GameObject canvas;
@@ -63,7 +64,7 @@ public class GameManager : MonoBehaviour
         foreach (char c in text.ToCharArray())
         {
             dialogText.GetComponent<TextMeshProUGUI>().text += c ;
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(typeSpeed);
         }
     }
 

@@ -61,8 +61,8 @@ public class movement : MonoBehaviour
         else if (vertical < 0 && lookingup)
         {
             Flip();
-        }
-        */
+        }*/
+        
     }
 
     public void slide(bool sliding){
@@ -72,7 +72,13 @@ public class movement : MonoBehaviour
     private void Flip()
     {
         lookingright = !lookingright;
+        
         transform.Rotate(0f, 180f, 0f);
+        
+        /*else if (lookingup = !lookingup)
+        {
+            transform.Rotate(0f, 90f, 0f);
+        }*/
 
     }
 

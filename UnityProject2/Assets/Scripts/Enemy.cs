@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
 
     public float duration = 3f;
 
+    public AudioClip die;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,5 +84,6 @@ public class Enemy : MonoBehaviour
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        AudioSource.PlayClipAtPoint (die, transform.position);
     }
 }

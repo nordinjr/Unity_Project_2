@@ -122,4 +122,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317ca78bc21313e4abc4e6f2ba868713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myText: Welcom to the Snail Kingdom!
+  myText: Welcome to the Snail Kingdom!

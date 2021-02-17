@@ -130,6 +130,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
         type: 3}
+      propertyPath: die
+      value: 
+      objectReference: {fileID: 8300000, guid: 96f1f9db27269514da680f208682357c, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
+      propertyPath: getHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 222264055024b8a46b16d0aca74aef71, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
       propertyPath: duration
       value: 1
       objectReference: {fileID: 0}
@@ -425,7 +435,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Time: 1
+  m_Time: 4
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -28077,6 +28087,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
         type: 3}
+      propertyPath: die
+      value: 
+      objectReference: {fileID: 8300000, guid: 96f1f9db27269514da680f208682357c, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
+      propertyPath: getHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 222264055024b8a46b16d0aca74aef71, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
       propertyPath: duration
       value: 2
       objectReference: {fileID: 0}
@@ -28759,6 +28779,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
         type: 3}
+      propertyPath: die
+      value: 
+      objectReference: {fileID: 8300000, guid: 96f1f9db27269514da680f208682357c, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
+      propertyPath: getHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 222264055024b8a46b16d0aca74aef71, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
       propertyPath: deathEffect
       value: 
       objectReference: {fileID: 1804530663023812036, guid: 1ff5c2cf2aafc1542bb8f05d0270472c,
@@ -29031,7 +29061,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2892910820977171364, guid: 6b48d93a3bd10994cbf6fdbb96075ec0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -29167,6 +29197,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -9.64
       objectReference: {fileID: 0}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
+      propertyPath: die
+      value: 
+      objectReference: {fileID: 8300000, guid: 96f1f9db27269514da680f208682357c, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
+      propertyPath: getHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 222264055024b8a46b16d0aca74aef71, type: 3}
     - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
         type: 3}
       propertyPath: duration
@@ -29343,6 +29383,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
         type: 3}
+      propertyPath: die
+      value: 
+      objectReference: {fileID: 8300000, guid: 96f1f9db27269514da680f208682357c, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
+      propertyPath: getHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 222264055024b8a46b16d0aca74aef71, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
       propertyPath: deathEffect
       value: 
       objectReference: {fileID: 1804530663023812036, guid: 1ff5c2cf2aafc1542bb8f05d0270472c,
@@ -29501,7 +29551,7 @@ GameObject:
   - component: {fileID: 2038515810}
   - component: {fileID: 2038515809}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: TileMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29718,6 +29768,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
+      propertyPath: die
+      value: 
+      objectReference: {fileID: 8300000, guid: 96f1f9db27269514da680f208682357c, type: 3}
+    - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
+      propertyPath: getHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 222264055024b8a46b16d0aca74aef71, type: 3}
     - target: {fileID: 5562157546166304497, guid: 1ac43569cf99b35478309af3d39b7fd1,
         type: 3}
       propertyPath: deathEffect

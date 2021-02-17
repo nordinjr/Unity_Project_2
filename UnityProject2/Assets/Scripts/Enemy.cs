@@ -9,6 +9,9 @@ public class Enemy : MonoBehaviour
 
     private Queue<GameObject> qlocs;
 
+    public GameObject deathEffect;
+    public int health = 100;
+
     public float duration = 3f;
 
     // Start is called before the first frame update
@@ -39,6 +42,8 @@ public class Enemy : MonoBehaviour
         qlocs.Enqueue(pong);
     }
 
+   
+
     IEnumerator LerpPosition(Vector3 targetPosition)
     {
         float time = 0;
@@ -61,5 +66,21 @@ public class Enemy : MonoBehaviour
         {
             GameManager.Instance.GameOver();
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

@@ -214,6 +214,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PingPong (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5562157547507447381, guid: 1ac43569cf99b35478309af3d39b7fd1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.88
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ac43569cf99b35478309af3d39b7fd1, type: 3}
 --- !u!1001 &229528591

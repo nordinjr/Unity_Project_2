@@ -26,11 +26,12 @@ public class Signs : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2d(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.HideDialog();
         }
     }
+
 }

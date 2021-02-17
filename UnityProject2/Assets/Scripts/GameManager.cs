@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject dialogText;
     public GameObject startButton;
     public GameObject backgroundImage;
+    
 
     public GameObject canvas;
     public GameObject events;
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
     private void Awake()
     {
@@ -107,6 +108,8 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(ColorLerp(new Color(1, 1, 1, 0), 2));
     }
+
+    
 }
 
 

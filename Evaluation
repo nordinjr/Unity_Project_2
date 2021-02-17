@@ -1,0 +1,26 @@
+# Unity Project 2 By Jake Nordin and Trey Hoopchuk
+
+# For our game, you play as a snail far from its home! It is your goal to survive and find the way home. This is done by avoiding Salt.
+# You can also destroy the salt containers by throwing your spears at them! The salt has quite a bit of health, but they can be destroyed!
+# We want the player to have fun, but there may or may not be some tricky tricks througout the map! 
+
+
+
+
+
+# Our attributions for this game!
+#     - font : https://www.dafont.com/some-time-later.font?l[]=10
+#     - salt enemy : https://www.pngrepo.com/svg/227326/salt
+#     - snail : https://opengameart.org/content/snail
+#     - spear : https://opengameart.org/content/spear-5
+#     - snail house : https://pixabay.com/vectors/mushroom-fly-agarnic-house-green-307469/
+#     - nature tileset : https://stealthix.itch.io/rpg-nature-tileset
+
+
+
+
+# Each of our contributions to the game
+#     Jake : I created the UI elements, player shooting and flipping direction, 
+#            dialogue interactions, enemy movment and deaths.
+
+#     Trey : 

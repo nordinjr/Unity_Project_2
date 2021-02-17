@@ -23,4 +23,5 @@
 #     Jake : I created the UI elements, player shooting and flipping direction, 
 #            dialogue interactions, enemy movment and deaths.
 
-#     Trey : 
+#     Trey : I created a lot of the base world and mechanics such as the tilemaps and collision,
+             sound effects, movement, sprites, and getting the camera to follow.
